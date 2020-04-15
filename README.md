@@ -5,7 +5,3 @@ This is a Storycopter app project and can be opened and managed with Storycopter
 ## Local dev env: 
 
 `$ yarn && yarn start`
-
-## NPM release
-
-`$ yarn release`
