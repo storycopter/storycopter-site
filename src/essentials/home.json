@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "coverEnabled": false,
+    "coverImage": {
+      "name": null
+    },
+    "path": "/",
+    "title": "Opening Titles",
+    "uid": "home"
+  },
+  "elements": [
+    {
+      "id": "001",
+      "invert": true,
+      "order": 0,
+      "settings": {
+        "align": "left",
+        "backgColor": null,
+        "backgImage": {
+          "name": null
+        },
+        "backgImageEnabled": false,
+        "fullSize": true,
+        "maskColor": null,
+        "subtitle": null,
+        "text": "",
+        "textColor": null,
+        "title": "Opening Titles"
+      },
+      "type": "headline"
+    }
+  ]
+}
