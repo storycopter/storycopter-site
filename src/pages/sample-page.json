@@ -4,13 +4,13 @@
     "coverImage": {
       "name": null
     },
-    "path": "/credits",
-    "title": "Credits",
-    "uid": "credits"
+    "path": "/",
+    "title": "Sample page",
+    "uid": "sample-page"
   },
   "elements": [
     {
-      "id": "001",
+      "id": "00000",
       "order": 0,
       "settings": {
         "align": "left",
@@ -18,13 +18,13 @@
         "backgImage": {
           "name": null
         },
-        "backgImageEnabled": null,
+        "backgImageEnabled": false,
         "fullSize": true,
         "maskColor": null,
         "subtitle": null,
-        "text": null,
+        "text": "",
         "textColor": null,
-        "title": "Credits"
+        "title": "Sample page"
       },
       "type": "headline"
     }
