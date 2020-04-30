@@ -1,7 +1,7 @@
 {
-  "name": "@storycopter/idoc",
-  "version": "0.0.18",
-  "main": "lib/index.js",
+  "name": "@storycopter/site",
+  "version": "0.0.1",
+  "main": "index.js",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@material-ui/core": "4.9.12",
@@ -60,15 +60,11 @@
     "webpack-cli": "3.3.11"
   },
   "scripts": {
-    "build:lib": "webpack -p --config ./lib.webpack.config.js",
     "build:site": "gatsby build",
     "clean": "yarn clean:site && yarn clean:lib",
-    "clean:lib": "rm -rf ./lib",
     "clean:site": "gatsby clean && npx rimraf **/node_modules/",
     "deploy:site": "gatsby build && netlify deploy --dir=public --prod",
-    "publish:lib": "yarn publish --access=public",
     "start": "yarn start:site",
-    "start:lib": "nodemon --watch src --exec yarn build:lib",
     "start:site": "gatsby develop"
   }
 }

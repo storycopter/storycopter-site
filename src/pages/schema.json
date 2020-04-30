@@ -29,6 +29,9 @@
             "order": 0
           }
         ],
+        "image": {
+          "name": "string.png"
+        },
         "maskColor": "string",
         "subtitle": "string",
         "text": "string",

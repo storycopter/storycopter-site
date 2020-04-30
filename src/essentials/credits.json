@@ -13,7 +13,7 @@
       "id": "001",
       "order": 0,
       "settings": {
-        "align": "left",
+        "align": "center",
         "backgColor": "#000000",
         "backgImage": {
           "name": "storycopter-cover-yellow.png"
