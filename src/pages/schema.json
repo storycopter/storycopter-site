@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "coverEnabled": true,
+    "coverImage": {
+      "name": "dummy.png"
+    },
+    "order": 99999,
+    "path": "/schema",
+    "summary": "Some text",
+    "title": "string",
+    "uid": "schema"
+  },
+  "elements": [
+    {
+      "id": "string",
+      "order": 0,
+      "settings": {
+        "align": "string",
+        "backgColor": "string",
+        "backgImage": {
+          "name": "dummy.png"
+        },
+        "backgImageEnabled": true,
+        "fullSize": true,
+        "images": [
+          {
+            "caption": "string",
+            "name": "string",
+            "order": 0
+          }
+        ],
+        "maskColor": "string",
+        "subtitle": "string",
+        "text": "string",
+        "textColor": "string",
+        "title": "string"
+      },
+      "type": "string"
+    }
+  ]
+}

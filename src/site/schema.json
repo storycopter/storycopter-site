@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "string",
+    "publisher": "string",
+    "summary": "string",
+    "coverEnabled": true,
+    "coverImage": {
+      "name": "dummy.png"
+    },
+    "uid": "schema"
+  },
+  "brand": {
+    "backgColor": "string",
+    "brandColor": "string",
+    "faviconEnabled": true,
+    "logoEnabled": true,
+    "favicon": {
+      "name": "favicon.ico"
+    },
+    "logo": {
+      "name": "logo.png"
+    },
+    "textColor": "string",
+    "typography": "string",
+    "fonts": {
+      "head": "string",
+      "body": "string"
+    }
+  },
+  "motivation": {
+    "enabled": true,
+    "label": "String",
+    "link": "string"
+  },
+  "sound": {
+    "enabled": true,
+    "track": {
+      "name": "string"
+    }
+  }
+}

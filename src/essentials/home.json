@@ -1,6 +1,6 @@
 {
   "meta": {
-    "coverEnabled": false,
+    "coverEnabled": true,
     "coverImage": {
       "name": null
     },
@@ -13,18 +13,18 @@
       "id": "001",
       "order": 0,
       "settings": {
-        "align": "left",
-        "backgColor": null,
+        "align": "center",
+        "backgColor": "#000000",
         "backgImage": {
-          "name": null
+          "name": "storycopter-cover-yellow.png"
         },
-        "backgImageEnabled": false,
+        "backgImageEnabled": true,
         "fullSize": true,
-        "maskColor": null,
-        "subtitle": null,
-        "text": "",
-        "textColor": null,
-        "title": "Opening Titles"
+        "maskColor": "rgba(0,0,0,0.0)",
+        "subtitle": "A new interactive documentary production suite for the Web is preparing for take off. ",
+        "text": "Follow us on a quick tour around the cockpit and sign up to get updates about test flights. ",
+        "textColor": "#ffffff",
+        "title": "Storycopter"
       },
       "type": "headline"
     }

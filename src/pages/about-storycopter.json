@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "coverEnabled": true,
+    "coverImage": {
+      "name": "storycopter-cover-black.png"
+    },
+    "order": 0,
+    "path": "/about-storycopter",
+    "title": "About Storycopter",
+    "uid": "about-storycopter",
+    "summary": "Short page summary"
+  },
+  "elements": [
+    {
+      "id": "004",
+      "order": 0,
+      "settings": {
+        "backgColor": null,
+        "fullSize": true,
+        "maskColor": "rgba(255, 255, 255, 0.6)",
+        "images": [
+          {
+            "backgImageEnabled": true,
+            "caption": "Horizontal Image",
+            "name": "image-h.png",
+            "order": 0
+          },
+          {
+            "backgImageEnabled": true,
+            "caption": "Vertical Image",
+            "name": "image-v.png",
+            "order": 1
+          }
+        ],
+        "textColor": "#000000",
+        "align": "right"
+      },
+      "type": "slideshow"
+    },
+    {
+      "id": "001",
+      "order": 1,
+      "settings": {
+        "align": "center",
+        "backgColor": "#ffffff",
+        "backgImage": {
+          "name": "storycopter-cover-white.png"
+        },
+        "backgImageEnabled": true,
+        "fullSize": true,
+        "maskColor": null,
+        "subtitle": "",
+        "text": "",
+        "textColor": "#000000",
+        "title": "Helping your stories get off the ground"
+      },
+      "type": "headline"
+    },
+    {
+      "id": "000334",
+      "order": 2,
+      "settings": {
+        "backgColor": "#ccc",
+        "fullSize": true,
+        "image": {
+          "name": "image-h.png"
+        },
+        "textColor": "#fff",
+        "title": "This is a rather lengthy figure caption so we could test how such lengthy figure captions appear under respective image."
+      },
+      "type": "figure"
+    },
+    {
+      "id": "002",
+      "order": 3,
+      "settings": {
+        "backgColor": null,
+        "fullSize": null,
+        "maskColor": "rgba(255, 255, 255, 0.6)",
+        "images": [
+          {
+            "backgImageEnabled": true,
+            "order": 0,
+            "caption": "Horizontal Image",
+            "name": "image-h.png"
+          },
+          {
+            "backgImageEnabled": false,
+            "order": 1,
+            "caption": "Horizontal Image",
+            "name": "image-h.png"
+          },
+          {
+            "backgImageEnabled": true,
+            "order": 2,
+            "caption": "Vertical Image",
+            "name": "image-v.png"
+          }
+        ],
+        "textColor": "#000000"
+      },
+      "type": "slideshow"
+    }
+  ]
+}

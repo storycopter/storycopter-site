@@ -3,35 +3,26 @@ const _ = require('lodash');
 
 exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
   const config = getConfig();
-  if (stage.startsWith('develop') && config.resolve) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      react: path.resolve('./node_modules/react'),
-      'react-dom': path.resolve('./node_modules/react-dom'),
-      // 'react-dom': '@hot-loader/react-dom',
-    };
-  }
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, 'src/templates'), 'node_modules'],
-    },
-  });
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    '@ui': path.resolve(__dirname, 'src/ui'),
+  };
 };
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const tpls = {
-    page: path.resolve(__dirname, 'src/templates/PageTpl.js'),
-    contents: path.resolve(__dirname, 'src/templates/ContentsTpl.js'),
-    credits: path.resolve(__dirname, 'src/templates/CreditsTpl.js'),
-    error: path.resolve(__dirname, 'src/templates/ErrorTpl.js'),
-    home: path.resolve(__dirname, 'src/templates/HomeTpl.js'),
+    page: path.resolve(__dirname, 'src/ui/templates/PageTpl.js'),
+    contents: path.resolve(__dirname, 'src/ui/templates/ContentsTpl.js'),
+    credits: path.resolve(__dirname, 'src/ui/templates/CreditsTpl.js'),
+    error: path.resolve(__dirname, 'src/ui/templates/ErrorTpl.js'),
+    home: path.resolve(__dirname, 'src/ui/templates/HomeTpl.js'),
   };
 
   const allEssentials = await graphql(`
     {
-      allEssentialsJson {
+      allEssentialsJson(filter: { meta: { uid: { ne: "schema" } } }) {
         edges {
           node {
             meta {
@@ -46,7 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   const allPages = await graphql(`
     {
-      allPagesJson(sort: { fields: meta___order }) {
+      allPagesJson(filter: { meta: { uid: { ne: "schema" } } }, sort: { fields: meta___order }) {
         edges {
           node {
             meta {
@@ -65,9 +56,10 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
+
   const allSiteData = await graphql(`
     {
-      allSiteJson {
+      allSiteJson(filter: { meta: { uid: { ne: "schema" } } }) {
         edges {
           node {
             meta {
@@ -78,6 +70,7 @@ exports.createPages = async ({ graphql, actions }) => {
               publisher
               summary
               title
+              uid
             }
             brand {
               backgColor
@@ -92,6 +85,10 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               textColor
               typography
+              fonts {
+                head
+                body
+              }
             }
             motivation {
               enabled
@@ -114,6 +111,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       gql: 'allEssentialsJson',
       src: allEssentials,
+      tpl: null,
     },
     {
       gql: 'allPagesJson',
@@ -126,26 +124,13 @@ exports.createPages = async ({ graphql, actions }) => {
     const { edges } = creator.src.data[creator.gql];
     edges.forEach(({ node }) => {
       const { path, uid } = node.meta;
-
-      // skip the dummy pages (used to sanitise Gatsby’s graphql queries)
-      const dummyPages = ['essentialsDummy', 'pagesDummy'];
-      if (dummyPages.includes(uid)) return null;
-      const pages = _.filter(allPages.data.allPagesJson.edges, function(o) {
-        if (!dummyPages.includes(o.node.meta.uid)) return o.node.meta;
-      });
-      const essentials = _.filter(allEssentials.data.allEssentialsJson.edges, function(o) {
-        if (!dummyPages.includes(o.node.meta.uid)) return o.node.meta;
-      });
-
       createPage({
-        component: creator.tpl ? creator.tpl : tpls[uid],
+        component: creator.tpl || tpls[uid],
         context: {
-          uid: uid,
-          contextData: {
-            allPages: pages.map(page => page.node.meta),
-            allEssentials: essentials.map(page => page.node.meta),
-            allSiteData: allSiteData.data.allSiteJson.edges[0].node,
-          },
+          allEssentials: allEssentials.data.allEssentialsJson.edges.map(o => o.node.meta),
+          allPages: allPages.data.allPagesJson.edges.map(o => o.node.meta),
+          allSiteData: allSiteData.data.allSiteJson.edges.map(o => o.node)[0],
+          uid,
         },
         path: path,
       });

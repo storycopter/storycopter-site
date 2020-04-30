@@ -1,6 +1,6 @@
 {
   "meta": {
-    "coverEnabled": false,
+    "coverEnabled": true,
     "coverImage": {
       "name": null
     },
@@ -14,17 +14,17 @@
       "order": 0,
       "settings": {
         "align": "left",
-        "backgColor": null,
+        "backgColor": "#000000",
         "backgImage": {
-          "name": null
+          "name": "storycopter-cover-yellow.png"
         },
-        "backgImageEnabled": null,
+        "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
-        "subtitle": null,
-        "text": null,
-        "textColor": null,
-        "title": "Credits"
+        "subtitle": "Storycopter is actively looking for test pilots. Interested? Email us at storycopter@gmail.com.",
+        "text": "Storycopter is an open-source project developed by Piotr Fedorczyk, Joanna Bogusz, Laurian Gridinoc and Mark Boas.",
+        "textColor": "#ffffff",
+        "title": "Over."
       },
       "type": "headline"
     }
