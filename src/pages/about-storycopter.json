@@ -12,39 +12,13 @@
   },
   "elements": [
     {
-      "id": "004",
-      "order": 0,
-      "settings": {
-        "backgColor": null,
-        "fullSize": true,
-        "maskColor": "rgba(255, 255, 255, 0.6)",
-        "images": [
-          {
-            "backgImageEnabled": true,
-            "caption": "Horizontal Image",
-            "name": "image-h.png",
-            "order": 0
-          },
-          {
-            "backgImageEnabled": true,
-            "caption": "Vertical Image",
-            "name": "image-v.png",
-            "order": 1
-          }
-        ],
-        "textColor": "#000000",
-        "align": "right"
-      },
-      "type": "slideshow"
-    },
-    {
       "id": "001",
       "order": 1,
       "settings": {
         "align": "left",
         "backgColor": null,
         "backgImage": {
-          "name": "storycopter_background04_2@2x-1588272745636.png"
+          "name": "storycopter_background03_2@2x-2-1588280379471.png"
         },
         "backgImageEnabled": true,
         "fullSize": true,
@@ -58,26 +32,12 @@
     },
     {
       "settings": {
-        "backgColor": "#cccccc",
-        "fullSize": true,
-        "image": {
-          "name": "screenshot-2020-04-30-at-21.07.46-1588273683718.png"
-        },
-        "textColor": "#ffffff",
-        "title": "Storycopter editor UI"
-      },
-      "type": "figure",
-      "id": "about-storycopter-1588273570598",
-      "order": 2
-    },
-    {
-      "settings": {
         "align": "left",
         "backgColor": null,
         "backgImage": {
-          "name": "storycopter_background02_1@2x-1588272791211.png"
+          "name": "storycopter_background06_1@2x-1588276283994.png"
         },
-        "backgImageEnabled": false,
+        "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
         "subtitle": "Storytelling is as old as civilization. Good stories capture the imagination by leading people on a journey that is both informative and often pleasurable. Storycopter can take you there.",
@@ -87,16 +47,16 @@
       },
       "type": "headline",
       "id": "about-storycopter-1588266491833",
-      "order": 3
+      "order": 2
     },
     {
       "settings": {
         "align": "right",
-        "backgColor": "#efb43f",
+        "backgColor": "#adadad",
         "backgImage": {
-          "name": "storycopter_background05_4@2x-1588273116270.png"
+          "name": "mask-group-3@2x-1588280014361.png"
         },
-        "backgImageEnabled": false,
+        "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
         "subtitle": "The web is fast becoming the medium that connects us. Visually compose rich and engaging web-based stories with our unique editor, which lets you get up and flying in double quick time.",
@@ -106,11 +66,11 @@
       },
       "type": "headline",
       "id": "about-storycopter-1588266580738",
-      "order": 4
+      "order": 3
     },
     {
       "id": "002",
-      "order": 5,
+      "order": 4,
       "settings": {
         "backgColor": null,
         "fullSize": null,
@@ -144,28 +104,28 @@
         "align": "left",
         "backgColor": null,
         "backgImage": {
-          "name": "storycopter_background06_1@2x-1588273163750.png"
+          "name": "mask-group-3-1588278060048.png"
         },
-        "backgImageEnabled": false,
+        "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
         "subtitle": "Storycopter provides a template which you can apply to all chapters of your story. Each chapter composed from a number of easily assembled building blocks.",
         "text": "",
-        "textColor": "#000000",
+        "textColor": null,
         "title": "Helping your stories get off the ground"
       },
       "type": "headline",
-      "id": "about-storycopter-1588266782671",
-      "order": 6
+      "id": "about-storycopter-1588278043275",
+      "order": 5
     },
     {
       "settings": {
-        "align": "left",
-        "backgColor": "#efb43f",
+        "align": "right",
+        "backgColor": "#adadad",
         "backgImage": {
-          "name": "storycopter_background03_2@2x-1588273227677.png"
+          "name": "mask-group-5-1588280370810.png"
         },
-        "backgImageEnabled": false,
+        "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
         "subtitle": "We take care of the development to ensure your story is truly responsive and works across the multitude of screens and devices including (of course) mobile.",
@@ -175,7 +135,7 @@
       },
       "type": "headline",
       "id": "about-storycopter-1588266969668",
-      "order": 7
+      "order": 6
     },
     {
       "settings": {
@@ -190,10 +150,29 @@
         "subtitle": "You can write as little or as much code as you like and customize your own templates to make your story personal.",
         "text": "",
         "textColor": "#000000",
-        "title": "Super flexible"
+        "title": "Stay flexible"
       },
       "type": "headline",
       "id": "about-storycopter-1588267054810",
+      "order": 7
+    },
+    {
+      "settings": {
+        "align": "left",
+        "backgColor": null,
+        "backgImage": {
+          "name": "storycopter_background04_2@2x-1588279001465.png"
+        },
+        "backgImageEnabled": true,
+        "fullSize": true,
+        "maskColor": "rgba(0,0,0,0.0)",
+        "subtitle": "Storycopter is preparing for take-off. Follow us to ensure it never drops of your radar.",
+        "text": "Find us at @storycopter and @storycopternews",
+        "textColor": "#ffffff",
+        "title": "Coming soon"
+      },
+      "type": "headline",
+      "id": "about-storycopter-1588278236710",
       "order": 8
     }
   ]

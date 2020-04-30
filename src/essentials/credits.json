@@ -21,10 +21,10 @@
         "backgImageEnabled": true,
         "fullSize": true,
         "maskColor": null,
-        "subtitle": "Storycopter is actively looking for test pilots. Interested? Email us at storycopter@gmail.com.",
-        "text": "Storycopter is an open-source project developed by Piotr Fedorczyk, Joanna Bogusz, Laurian Gridinoc and Mark Boas.",
+        "subtitle": "Storycopter is actively looking for test pilots. Interested? Email us at storycopter@gmail.com",
+        "text": "This website has been built using Storycopter—a set of sophisticated tools to create, manage and publish interactive documentaries on The Web. It’s an open-source project developed by Piotr Fedorczyk, Joanna Bogusz, Laurian Gridinoc and Mark Boas. Out.",
         "textColor": "#ffffff",
-        "title": "Over."
+        "title": "Read back"
       },
       "type": "headline"
     }
