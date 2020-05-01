@@ -33,11 +33,8 @@
   },
   "sound": {
     "enabled": true,
-    "track": {
-      "name": "track.mp3"
-    },
-    "favicon": {
-      "name": "storycopter-loop__03-1588338489205.mp3"
+    "sound": {
+      "track": "storycopter-loop__03-1588340333269.mp3"
     }
   }
 }

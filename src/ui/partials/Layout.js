@@ -44,7 +44,7 @@ export default function Layout({
 
   const isEssential = ['contents', 'credits', 'error', 'home'].includes(props.data.page.meta.uid);
 
-  const audio = sound.enabled && sound.track.name ? `/${sound.track.name}` : null;
+  const audio = sound?.enabled && sound?.track?.name ? `/${sound.track.name}` : null;
   const favicon = brand.favicon.name ? `/${brand.favicon.name}` : null;
   const image = brand.coverEnabled && brand.cover.name ? `/${brand.cover.name}` : null;
 
@@ -58,7 +58,7 @@ export default function Layout({
 
   // console.group('Layout.js');
   // console.log(props.data.page.elements[0].settings.title);
-  // console.log({ props });
+  // console.log({ audio });
   // console.groupEnd();
 
   return (
