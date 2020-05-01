@@ -35,6 +35,9 @@
     "enabled": true,
     "sound": {
       "track": "storycopter-loop__03-1588340333269.mp3"
+    },
+    "track": {
+      "name": "storycopter-loop__02-1588341801622.mp3"
     }
   }
 }
